@@ -1,0 +1,23 @@
+raw_label,normalized_label,geographic_class,normalization_status,reason,first_snapshot,last_snapshot,frequency,semantic_status,notes
+Barishal Division,Barishal Division,DIVISION,SAFE_RAW_ONLY,Official display label preserved,2024-01-01,2026-09-29,observed,SUPPORTED_MEANING,No facility/residence attribution established
+Chattogram Division,Chattogram Division,DIVISION,SAFE_RAW_ONLY,Official display label preserved,2024-01-01,2026-09-29,observed,SUPPORTED_MEANING,No facility/residence attribution established
+Dhaka Division (Out of CC),Dhaka Division (Out of CC),DIVISION_OUT_OF_CC,UNRESOLVED,Out-of-City-Corporation qualifier preserved; not ruralized,2024-01-01,2026-09-29,observed,AMBIGUOUS,Geographic basis unresolved
+DNCC,DNCC,CITY_CORPORATION,SAFE_RAW_ONLY,Raw abbreviation preserved,2024-01-01,2026-09-29,observed,SUPPORTED_MEANING,No patient-residence attribution established
+DSCC,DSCC,CITY_CORPORATION,SAFE_RAW_ONLY,Raw abbreviation preserved,2024-01-01,2026-09-29,observed,SUPPORTED_MEANING,No patient-residence attribution established
+Khulna Division,Khulna Division,DIVISION,SAFE_RAW_ONLY,Official display label preserved,2024-01-01,2026-09-29,observed,AMBIGUOUS,No facility/residence attribution established
+Mymensingh Division,Mymensingh Division,DIVISION,SAFE_RAW_ONLY,Official display label preserved,2024-01-01,2026-09-29,observed,AMBIGUOUS,No facility/residence attribution established
+Rajshahi Division,Rajshahi Division,DIVISION,SAFE_RAW_ONLY,Official display label preserved,2024-01-01,2026-09-29,observed,AMBIGUOUS,No facility/residence attribution established
+Rangpur Division,Rangpur Division,DIVISION,SAFE_RAW_ONLY,Official display label preserved,2024-01-01,2026-09-29,observed,AMBIGUOUS,No facility/residence attribution established
+Sylhet Division,Sylhet Division,DIVISION,SAFE_RAW_ONLY,Official display label preserved,2024-01-01,2026-09-29,observed,AMBIGUOUS,No facility/residence attribution established
+Dhaka,Dhaka,GEOGRAPHIC_LABEL,SAFE_RAW_ONLY,Raw label preserved,2024-01-01,2026-09-29,observed,AMBIGUOUS,Context-dependent geography
+Khulna,Khulna,GEOGRAPHIC_LABEL,SAFE_RAW_ONLY,Raw label preserved,2024-01-01,2026-09-29,observed,AMBIGUOUS,Context-dependent geography
+Chattogram,Chattogram,GEOGRAPHIC_LABEL,SAFE_RAW_ONLY,Raw label preserved,2024-01-01,2026-09-29,observed,AMBIGUOUS,Context-dependent geography
+Barishal,Barishal,GEOGRAPHIC_LABEL,SAFE_RAW_ONLY,Raw label preserved,2024-01-01,2026-09-29,observed,AMBIGUOUS,Context-dependent geography
+Rajshahi,Rajshahi,GEOGRAPHIC_LABEL,SAFE_RAW_ONLY,Raw label preserved,2024-01-01,2026-09-29,observed,AMBIGUOUS,Context-dependent geography
+Mymensingh,Mymensingh,GEOGRAPHIC_LABEL,SAFE_RAW_ONLY,Raw label preserved,2024-01-01,2026-09-29,observed,AMBIGUOUS,Context-dependent geography
+Rangpur,Rangpur,GEOGRAPHIC_LABEL,SAFE_RAW_ONLY,Raw label preserved,2024-01-01,2026-09-29,observed,AMBIGUOUS,Context-dependent geography
+Sylhet,Sylhet,GEOGRAPHIC_LABEL,SAFE_RAW_ONLY,Raw label preserved,2024-01-01,2026-09-29,observed,AMBIGUOUS,Context-dependent geography
+Raishahi,Raishahi,TYPOGRAPHIC_VARIANT,UNRESOLVED,Observed spelling variant; not silently corrected,2024-01-01,2026-09-29,observed,AMBIGUOUS,Preserve for audit
+Dhaka  (Out of CC),Dhaka  (Out of CC),OUT_OF_CC,UNRESOLVED,Spacing and qualifier preserved; not ruralized,2024-01-01,2026-09-29,observed,AMBIGUOUS,Geographic basis unresolved
+Barishal ,Barishal ,SPACING_VARIANT,UNRESOLVED,Trailing whitespace preserved in raw-label map,2024-01-01,2026-09-29,observed,AMBIGUOUS,Do not merge without provenance rule
+Chattogram ,Chattogram ,SPACING_VARIANT,UNRESOLVED,Trailing whitespace preserved in raw-label map,2024-01-01,2026-09-29,observed,AMBIGUOUS,Do not merge without provenance rule

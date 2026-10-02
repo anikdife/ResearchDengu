@@ -1,0 +1,4 @@
+dghs_geographic_label,dghs_code_if_available,bbs_geographic_label,bbs_code,boundary_version,population_year,mapping_confidence,classification,status,notes
+Dhaka,UNKNOWN,Dhaka,UNKNOWN,DGHS 2020-11-13 district layer,2022,LOW,AMBIGUOUS,OPEN,Verify whether DGHS district rows include Dhaka metropolitan/outside-metropolitan components
+Barishal,UNKNOWN,Barishal,UNKNOWN,DGHS 2020-11-13 district layer,2022,LOW,AMBIGUOUS,OPEN,Name/code crosswalk not built from raw files
+ALL DISTRICTS,UNKNOWN,All 64 districts,UNKNOWN,DGHS 2020-11-13 district layer,2022,LOW,HARMONISABLE,OPEN,Feature count and labels require local query/archive

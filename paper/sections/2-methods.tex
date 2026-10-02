@@ -1,0 +1,55 @@
+\subsection{Study design}
+
+We conducted an observation-level surveillance-methods and data-quality study of historical states exposed by the public Directorate General of Health Services (DGHS) Dengue Dynamic Dashboard. Restricted descriptive dengue observations were retained as supporting context. The study was designed to assess reproducibility, semantic interpretability, provenance, and internal reconciliation rather than to estimate population disease burden or causal effects.
+
+\subsection{Data source and DGHS Dengue Dynamic Dashboard}
+
+The data source was the publicly accessible DGHS Dengue Dynamic Dashboard. The study used dashboard responses archived during the project's validated acquisition process. Public-dashboard observations were not assumed to constitute the underlying DGHS surveillance database. The available source fields were therefore described using source terminology and were not reinterpreted as population-level measures.
+
+The validated corpus comprised 27 dated snapshots from 1 January 2024 through 29 September 2026 (Supplementary Table S1). The 2026 observations were treated as an incomplete follow-up period and were not treated as a completed annual observation.
+
+\subsection{Historical dashboard-state reconstruction}
+
+For this study, a historical dashboard state was considered successfully reconstructed when the validated acquisition record showed that the requested date and year were submitted, the public response returned HTTP 200, a displayed dashboard date was extracted and agreed with the requested date, the expected dashboard structure was present, and the required source-labelled fields could be extracted. The raw response was archived before parsing, request/response metadata were recorded, and a SHA-256 integrity hash was calculated. Expected structure was checked with a deterministic compatibility signature: a SHA-256 hash of normalized JSON containing every form's method, normalized action, and control tuples (element name, type, name); all table-header text lists; and the sorted IDs of the specified chart containers. The reference signature was \texttt{84efb756f47cbb24e1ad240bc2507576ead9cab3951e379ac0e618e7bb94a83d}. This is structural compatibility only and does not establish semantic equivalence. The frozen ledger records these criteria for all 27 states; the three B1.7 spot-validated states additionally passed all 18 offline source-to-table checks (Supplementary Tables S1--S2).
+
+\subsection{Acquisition protocol and sampling}
+
+The acquisition workflow used ordinary public requests to the dashboard's documented interface, without authentication, CAPTCHA circumvention, access-control bypass, endpoint guessing, or browser automation. The exact response body was archived before parsing under date-specific directories with metadata and SHA-256 integrity hashes. The 27-date set contains 9 dates in each of 2024, 2025, and 2026. The 2024--2025 dates were predefined candidates retained from the B0.9A/B0.9C manifest, including year and month boundaries, selected dated states, and year-validation dates. The 2026 dates were predefined validated B0.8A/B pilot dates. The ledger records 16 retrieved-valid and 11 reused-verified artifacts, with no acquisition failure substitution. The available manifests do not preserve a complete chronology of whether any candidate was viewed before final selection; accordingly, the study does not claim an outcome-blinded sampling process. Full date-level bases and statuses are provided in Supplementary Table S3.
+
+\subsection{Archived response integrity and provenance}
+
+Each archived response was retained as a project artifact and identified by a SHA-256 integrity digest. Hashing supports later integrity verification; it does not by itself establish write-once storage or retention control. The B0.10 freeze linked processed observations and headline tables to parent responses. The B0.11 and B1.7 manifests were checked before drafting, and the frozen B0.10 processed-table hashes remained unchanged. Provenance completeness was assessed across 432 processed observations (Supplementary Table S1).
+
+\subsection{Data extraction}
+
+Extraction retained objectively present HTML tables, chart or script-derived source labels, controls, and headline fields. The processed observation table represented 11 data families across the 27 snapshots, yielding 297 family-level observation rows. The authorized headline-derived table retained four source-labelled fields per snapshot---weekly case, weekly death, cumulative case, and cumulative death---corresponding to 108 field values across the corpus (Supplementary Table S1).
+
+The B1.7 spot-validation confirmed that these headline values were represented in the dashboard summary strip using the weekly and cumulative icon fields. The separate last-24-hour charts were treated as a different reporting window and were not substituted for the summary-strip fields (Supplementary Table S1).
+
+\subsection{Semantic validation}
+
+Semantic validation followed the B0.11 variable, language, age-label, and geography contracts. Values were described as DGHS-reported dashboard observations or source-labelled fields. The dashboard response was not treated as evidence of patient residence, treatment location, reporting-facility coverage, population denominators, infection status, or underlying surveillance-system validity.
+
+\subsection{Category normalization}
+
+Normalization was conservative and provenance-preserving. Raw labels were retained. Blank, malformed, overlapping, spacing-variant, and otherwise ambiguous categories were not silently repaired, merged, redistributed, or imputed. Source \texttt{Male} and \texttt{Female} labels were retained as sex-labelled dashboard categories; no gender identity or broader sex concept was inferred. Geography labels, including \texttt{Out of CC}, were not converted into residence or population categories.
+
+\subsection{Internal reconciliation procedures}
+
+Existing B0.10 reconciliation checks were retained without correction. The audit contained nine reconciliation tests, including demographic, geographic, headline, and longitudinal compatibility checks. B0.11 classified nine reconciliation limitations according to differences in time window, missing or unclassified categories, semantic mismatch, and unresolved compatibility. These classifications describe evidence limitations; they do not establish causal surveillance-system failures.
+
+\subsection{Historical revision/stability assessment}
+
+Revision assessment used the frozen B0.11 revision audit. Four time-unit rows---daily, EPI-week, monthly, and annual---remained unresolved because the processed parent did not contain typed chart-point values sufficient to construct canonical repeated series. Accordingly, the study did not claim that the dashboard was stable or that a revision process had been established.
+
+\subsection{Restricted descriptive analysis}
+
+Descriptive analysis was limited to source-labelled snapshot fields, family availability, anomaly counts, reconciliation classifications, provenance completeness, and bounded descriptive observations. No rates, incidence estimates, prevalence estimates, risk estimates, forecasts, regression, hypothesis tests, inferential confidence intervals, spatial inference, or causal analyses were performed. The 2026 period was explicitly treated as incomplete.
+
+\subsection{Reproducibility verification}
+
+Results were verified against the frozen B1 provenance records and B1.7 paper-package artifacts. Seven core findings were independently validated. In addition, three archived snapshots---2024-01-01, 2025-09-29, and 2026-09-29---were checked against the summary-strip labels, headline values, date controls, and displayed dates; all 18 checks matched (Supplementary Table S1).
+
+\subsection{Ethics and data governance}
+
+The study used publicly accessible aggregate dashboard observations and the project's archived responses. No patient-level identifiers were processed in the analyzed tables. Formal institutional review or exemption status has not yet been determined.

@@ -1,0 +1,14 @@
+data_family,earliest_date,latest_date,number_of_snapshot_observations,number_of_unique_time_points,gaps,coverage_limitations
+headline_metrics,2024-01-01,2026-09-29,27,27,non-daily planned snapshot gaps,headline snapshots only
+daily_case_series,2024-01-01,2026-09-29,27,UNRESOLVED,within-year series endpoints vary by requested snapshot,chart points not normalized into processed table
+daily_death_series,2024-01-01,2026-09-29,27,UNRESOLVED,within-year series endpoints vary by requested snapshot,chart points not normalized into processed table
+epi_week_series,2024-01-01,2026-09-29,27,UNRESOLVED,W01-W53 labels repeat by year,year key must be retained
+monthly_case_series,2024-01-01,2026-09-29,27,UNRESOLVED,monthly labels repeat by year,month-year key must be retained
+monthly_death_series,2024-01-01,2026-09-29,27,UNRESOLVED,monthly labels repeat by year,month-year key must be retained
+annual_series,2024-01-01,2026-09-29,27,9,none within displayed annual category set,annual chart categories repeat across snapshots
+division_snapshot,2024-01-01,2026-09-29,27,27,planned snapshot gaps,geographic state is snapshot-specific
+division_epi_week,2024-01-01,2026-09-29,27,UNRESOLVED,W labels repeat by year,not normalized
+city_corporation,2024-01-01,2026-09-29,27,27,planned snapshot gaps,geographic state is snapshot-specific
+within_outside_city_corporation,2024-01-01,2026-09-29,27,27,planned snapshot gaps,attribution semantics unresolved
+age_sex,2024-01-01,2026-09-29,27,27,planned snapshot gaps,raw labels malformed/overlapping
+death_age_sex,2024-01-01,2026-09-29,27,27,planned snapshot gaps,raw labels and denominator semantics unresolved

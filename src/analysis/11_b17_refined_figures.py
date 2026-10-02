@@ -1,0 +1,21 @@
+"""Create limited B1.7 paper-package SVGs from existing B1 outputs only."""
+from pathlib import Path
+import csv, html
+ROOT=Path(__file__).resolve().parents[2]
+OUT=ROOT/'data/derived/b17_figures'; OUT.mkdir(parents=True,exist_ok=True)
+def write(name,title,body,caption):
+    esc=lambda x:html.escape(str(x))
+    svg=f'<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="520"><title>{esc(title)}</title><rect width="1100" height="520" fill="white"/><text x="40" y="38" font-size="24" font-family="Arial">{esc(title)}</text>{body}<text x="40" y="450" font-size="15" font-family="Arial">Source: ResearchDengu B0.10/B1 frozen dashboard artifacts; 2024–2026 snapshots.</text><text x="40" y="475" font-size="13" font-family="Arial">Limitation: source-labelled dashboard observations; not population incidence, risk, or causal evidence.</text><text x="40" y="500" font-size="13" font-family="Arial">Caption: {esc(caption)}</text></svg>'
+    (OUT/name).write_text(svg,encoding='utf-8')
+arrow='<defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z"/></marker></defs>'
+write('figure1_acquisition_workflow.svg','Figure 1. Reproducible dashboard acquisition workflow',arrow+'<g font-family="Arial" font-size="18"><rect x="45" y="100" width="180" height="70" fill="#dbeafe" stroke="#1e3a8a"/><text x="70" y="140">Public POST</text><rect x="270" y="100" width="180" height="70" fill="#dbeafe" stroke="#1e3a8a"/><text x="300" y="140">Exact response</text><rect x="495" y="100" width="180" height="70" fill="#dbeafe" stroke="#1e3a8a"/><text x="535" y="140">SHA-256 archive</text><rect x="720" y="100" width="180" height="70" fill="#dbeafe" stroke="#1e3a8a"/><text x="752" y="140">Semantic audit</text><path d="M225 135h45M450 135h45M675 135h45" stroke="#111" marker-end="url(#a)"/></g>','Workflow schematic for public-interface retrieval, immutable archiving, hashing, and semantic validation.')
+write('figure2_snapshot_structure.svg','Figure 2. Snapshot-level versus longitudinal structure',arrow+'<g font-family="Arial" font-size="18"><rect x="70" y="90" width="380" height="170" fill="#dcfce7" stroke="#166534"/><text x="105" y="130">27 dated snapshots</text><text x="105" y="165">4 headline fields per snapshot</text><text x="105" y="200">family-level availability</text><rect x="600" y="90" width="380" height="170" fill="#fee2e2" stroke="#991b1b"/><text x="635" y="130">Not canonicalized</text><text x="635" y="165">daily / EPI-week / monthly</text><text x="635" y="200">annual typed chart series</text><path d="M450 175h150" stroke="#111" marker-end="url(#a)"/></g>','Snapshot-level values are reproducible within the frozen archive; typed longitudinal chart values remain unavailable.')
+q=list(csv.DictReader(open(ROOT/'outputs/b1/surveillance_quality_summary.csv',encoding='utf-8'))); bars=[]
+for i,r in enumerate(q[:4]):
+    v=int(r['value']); x=70+i*240; bars.append(f'<rect x="{x}" y="350" width="120" height="{v*8}" fill="#7c3aed"><title>{html.escape(r["metric"])}: {v}</title></rect><text x="{x}" y="375" font-size="13">{html.escape(r["result_id"])}</text><text x="{x}" y="335" font-size="13">{v}</text>')
+write('figure3_quality_findings.svg','Figure 3. Surveillance-quality audit findings','<g font-family="Arial">'+''.join(bars)+'</g>','Counts of anomaly, reconciliation, unresolved revision, and classified-failure audit rows; categories are not causal system-failure estimates.')
+rows=list(csv.DictReader(open(ROOT/'data/derived/descriptive_temporal.csv',encoding='utf-8'))); points=[]; maxv=max(int(r['weekly_case_raw']) for r in rows)
+for i,r in enumerate(rows):
+    x=55+i*36; y=350-int(int(r['weekly_case_raw'])/maxv*240); points.append(f'<circle cx="{x}" cy="{y}" r="4" fill="#0369a1"><title>{r["snapshot_id"]}: {r["weekly_case_raw"]}</title></circle>')
+write('figure4_restricted_headline_observations.svg','Figure 4. Restricted source-labelled headline observations','<g font-family="Arial">'+''.join(points)+'</g><text x="60" y="95" font-size="15">Weekly source-labelled field; points are snapshots, not an inferential trend</text>','Source-labelled weekly headline observations across archived snapshots; 2026 is incomplete and is not a completed-year comparison.')
+print('B17_REFINED_FIGURES=4')

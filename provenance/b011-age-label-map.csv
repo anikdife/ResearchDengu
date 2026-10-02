@@ -1,0 +1,24 @@
+raw_label,normalized_label,normalization_status,reason,first_snapshot,last_snapshot,frequency
+,BLANK,UNRESOLVED,Blank raw age label; no imputation,2024-01-01,2026-09-29,observed
+0-10,0-10,AMBIGUOUS,Overlaps with 0-5 and 6-10; preserved,2024-01-01,2026-09-29,observed
+0-5,0-5,AMBIGUOUS,Does not define boundary relation to 0-10,2024-01-01,2026-09-29,observed
+06-10,06-10,AMBIGUOUS,Format variant not merged with 6-10,2024-01-01,2026-09-29,observed
+11-15,11-15,SAFE_RAW_ONLY,Raw interval preserved; not recoded,2024-01-01,2026-09-29,observed
+16-20,16-20,SAFE_RAW_ONLY,Raw interval preserved; not recoded,2024-01-01,2026-09-29,observed
+21-25,21-25,AMBIGUOUS,Overlaps with 21-30,2024-01-01,2026-09-29,observed
+21-30,21-30,AMBIGUOUS,Overlaps with 21-25 and 26-30,2024-01-01,2026-09-29,observed
+26-30,26-30,AMBIGUOUS,Overlaps with 21-30,2024-01-01,2026-09-29,observed
+31-35,31-35,SAFE_RAW_ONLY,Raw interval preserved; not recoded,2024-01-01,2026-09-29,observed
+36-40,36-40,SAFE_RAW_ONLY,Raw interval preserved; not recoded,2024-01-01,2026-09-29,observed
+41-45,41-45,SAFE_RAW_ONLY,Raw interval preserved; not recoded,2024-01-01,2026-09-29,observed
+42309,42309,MALFORMED,Malformed raw label; no repair inferred,2024-01-01,2026-09-29,observed
+46-50,46-50,SAFE_RAW_ONLY,Raw interval preserved; not recoded,2024-01-01,2026-09-29,observed
+46301,46301,MALFORMED,Malformed raw label; no repair inferred,2024-01-01,2026-09-29,observed
+51-55,51-55,SAFE_RAW_ONLY,Raw interval preserved; not recoded,2024-01-01,2026-09-29,observed
+56-60,56-60,SAFE_RAW_ONLY,Raw interval preserved; not recoded,2024-01-01,2026-09-29,observed
+6-10,6-10,AMBIGUOUS,Format variant not merged with 06-10,2024-01-01,2026-09-29,observed
+61-65,61-65,SAFE_RAW_ONLY,Raw interval preserved; not recoded,2024-01-01,2026-09-29,observed
+66-70,66-70,SAFE_RAW_ONLY,Raw interval preserved; not recoded,2024-01-01,2026-09-29,observed
+71-75,71-75,SAFE_RAW_ONLY,Raw interval preserved; not recoded,2024-01-01,2026-09-29,observed
+76-80,76-80,SAFE_RAW_ONLY,Raw interval preserved; not recoded,2024-01-01,2026-09-29,observed
+80+,80+,SAFE_RAW_ONLY,Open upper interval preserved; not recoded,2024-01-01,2026-09-29,observed

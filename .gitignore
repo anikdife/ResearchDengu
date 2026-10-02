@@ -1,0 +1,15 @@
+﻿.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+data/raw/
+data/*response*
+data/historical_acquisition/
+data/historical_pilot/
+data/post_tests/
+data/dashboard_snapshots/
+data/date_semantics_retest/
+data/year_validation/
+tmp/

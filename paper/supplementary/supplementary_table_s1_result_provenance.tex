@@ -1,0 +1,18 @@
+\begingroup\footnotesize\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{P{0.1371\linewidth}P{0.1371\linewidth}P{0.1371\linewidth}P{0.1371\linewidth}P{0.1371\linewidth}P{0.1371\linewidth}P{0.1371\linewidth}}
+\toprule
+manuscript\_statement & internal\_result\_id & finding\_id & source\_artifact & source\_rows & analysis\_script & validation\_status \\
+\midrule\endhead
+The analysis-ready corpus contains 27 dated dashboard snapshots spanning 2024-01-01 to 2026-09-29. & R31-01 & F15-01 & outputs/b1/snapshot\_characteristics.csv & 27 & src/analysis/01\_snapshot\_characteristics.py & PASS \\
+The observation table records 11 data families across 27 snapshots, yielding 297 family-level rows. & R31-02 & F15-05 & data/processed/dghs\_research\_observations.csv & 297 & src/analysis/01\_snapshot\_characteristics.py & PASS \\
+Four source-labelled headline fields are retained per snapshot, corresponding to 108 field values. & R31-03 & F15-02 & outputs/b1/restricted\_temporal\_description.csv & 108 & src/analysis/02\_restricted\_temporal\_description.py & PASS \\
+The category-anomaly register contains 11 rows involving blank, malformed, overlapping, spelling, and City Corporation labels. & R31-04 & F15-09 & outputs/b010\_category\_anomalies.csv & 11 & src/analysis/05\_surveillance\_quality.py & PASS \\
+The reconciliation register contains 9 tests. & R31-05 & F15-10 & outputs/b010\_reconciliation\_tests.csv & 9 & src/analysis/05\_surveillance\_quality.py & PASS \\
+The B0.11 failure-classification register contains 9 classified limitations. & R31-06 & F15-12 & outputs/b011\_reconciliation\_failure\_classification.csv & 9 & src/analysis/05\_surveillance\_quality.py & PASS \\
+The revision audit contains four unresolved time-unit rows covering daily, EPI-week, monthly, and annual structures. & R31-07 & F15-11 & outputs/b011\_revision\_audit.csv & 4 & src/analysis/05\_surveillance\_quality.py & PASS \\
+Three archived snapshots underwent 18 manual spot-validation checks and all matched. & R31-08 & F15-13 & outputs/b17\_spot\_validation.csv & 18 & src/analysis/10\_b17\_spot\_validation.py & PASS \\
+All 432 processed observations retain complete provenance fields. & R31-09 & F15-13 & outputs/b1/surveillance\_quality\_summary.csv & 432 & src/analysis/05\_surveillance\_quality.py & PASS \\
+Summary-strip headline fields and last-24-hour charts were treated as different reporting windows. & R31-10 & F15-02 & outputs/b17\_spot\_validation.csv & 18 & src/analysis/10\_b17\_spot\_validation.py & PASS \\
+\bottomrule
+\end{longtable}
+\endgroup

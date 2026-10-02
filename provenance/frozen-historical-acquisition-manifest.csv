@@ -1,0 +1,28 @@
+requested_date,year,cadence_reason,expected_data_value,acquisition_component,validation_status,authorization_status
+2024-01-01,2024,year-boundary candidate retained from B0.9A,early-year state and embedded series,B_SNAPSHOT_STATE,SUPPORTED_NOT_VALIDATED,AUTHORIZED_B09C
+2024-01-31,2024,January boundary candidate retained from B0.9A,month-boundary state and embedded series,B_SNAPSHOT_STATE,SUPPORTED_NOT_VALIDATED,AUTHORIZED_B09C
+2024-02-01,2024,February boundary candidate retained from B0.9A,month-boundary state and embedded series,B_SNAPSHOT_STATE,SUPPORTED_NOT_VALIDATED,AUTHORIZED_B09C
+2024-02-28,2024,February boundary candidate retained from B0.9A,month-boundary state and embedded series,B_SNAPSHOT_STATE,SUPPORTED_NOT_VALIDATED,AUTHORIZED_B09C
+2024-03-01,2024,March boundary candidate retained from B0.9A,month-boundary state and embedded series,B_SNAPSHOT_STATE,SUPPORTED_NOT_VALIDATED,AUTHORIZED_B09C
+2024-04-04,2024,April candidate retained from B0.9A,dated state and embedded series,B_SNAPSHOT_STATE,SUPPORTED_NOT_VALIDATED,AUTHORIZED_B09C
+2024-04-30,2024,April boundary candidate retained from B0.9A,month-boundary state and embedded series,B_SNAPSHOT_STATE,SUPPORTED_NOT_VALIDATED,AUTHORIZED_B09C
+2024-06-30,2024,selected year-validation date,mid-year state and embedded series,B_SNAPSHOT_STATE,YEAR_VALIDATED,AUTHORIZED_B09C
+2024-09-29,2024,September candidate retained from B0.9A,late-period state and embedded series,B_SNAPSHOT_STATE,SUPPORTED_NOT_VALIDATED,AUTHORIZED_B09C
+2025-01-01,2025,year-boundary candidate retained from B0.9A,early-year state and embedded series,B_SNAPSHOT_STATE,SUPPORTED_NOT_VALIDATED,AUTHORIZED_B09C
+2025-01-31,2025,January boundary candidate retained from B0.9A,month-boundary state and embedded series,B_SNAPSHOT_STATE,SUPPORTED_NOT_VALIDATED,AUTHORIZED_B09C
+2025-02-01,2025,February boundary candidate retained from B0.9A,month-boundary state and embedded series,B_SNAPSHOT_STATE,SUPPORTED_NOT_VALIDATED,AUTHORIZED_B09C
+2025-02-28,2025,February boundary candidate retained from B0.9A,month-boundary state and embedded series,B_SNAPSHOT_STATE,SUPPORTED_NOT_VALIDATED,AUTHORIZED_B09C
+2025-03-01,2025,March boundary candidate retained from B0.9A,month-boundary state and embedded series,B_SNAPSHOT_STATE,SUPPORTED_NOT_VALIDATED,AUTHORIZED_B09C
+2025-04-04,2025,April candidate retained from B0.9A,dated state and embedded series,B_SNAPSHOT_STATE,SUPPORTED_NOT_VALIDATED,AUTHORIZED_B09C
+2025-04-30,2025,April boundary candidate retained from B0.9A,month-boundary state and embedded series,B_SNAPSHOT_STATE,SUPPORTED_NOT_VALIDATED,AUTHORIZED_B09C
+2025-06-30,2025,selected year-validation date,mid-year state and embedded series,B_SNAPSHOT_STATE,YEAR_VALIDATED,AUTHORIZED_B09C
+2025-09-29,2025,September candidate retained from B0.9A,late-period state and embedded series,B_SNAPSHOT_STATE,SUPPORTED_NOT_VALIDATED,AUTHORIZED_B09C
+2026-01-01,2026,validated B0.8A/B pilot date,early-year state and embedded series,A_LONGITUDINAL_AND_B_SNAPSHOT_STATE,VALIDATED,AUTHORIZED_B09C
+2026-01-31,2026,validated B0.8B pilot date,month-boundary state and embedded series,A_LONGITUDINAL_AND_B_SNAPSHOT_STATE,VALIDATED,AUTHORIZED_B09C
+2026-02-01,2026,validated B0.8B pilot date,month-boundary state and embedded series,A_LONGITUDINAL_AND_B_SNAPSHOT_STATE,VALIDATED,AUTHORIZED_B09C
+2026-02-28,2026,validated B0.8B pilot date,month-boundary state and embedded series,A_LONGITUDINAL_AND_B_SNAPSHOT_STATE,VALIDATED,AUTHORIZED_B09C
+2026-03-01,2026,validated B0.8B pilot date,month-boundary state and embedded series,A_LONGITUDINAL_AND_B_SNAPSHOT_STATE,VALIDATED,AUTHORIZED_B09C
+2026-04-04,2026,validated B0.8A/B pilot date,reference state and embedded series,A_LONGITUDINAL_AND_B_SNAPSHOT_STATE,VALIDATED,AUTHORIZED_B09C
+2026-04-30,2026,validated B0.8B pilot date,month-boundary state and embedded series,A_LONGITUDINAL_AND_B_SNAPSHOT_STATE,VALIDATED,AUTHORIZED_B09C
+2026-06-30,2026,validated B0.8B pilot date,mid-year state and embedded series,A_LONGITUDINAL_AND_B_SNAPSHOT_STATE,VALIDATED,AUTHORIZED_B09C
+2026-09-29,2026,validated B0.8B pilot date,late-period state and embedded series,A_LONGITUDINAL_AND_B_SNAPSHOT_STATE,VALIDATED,AUTHORIZED_B09C

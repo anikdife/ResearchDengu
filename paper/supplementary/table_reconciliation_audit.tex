@@ -1,0 +1,17 @@
+\begingroup\footnotesize\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{P{0.1371\linewidth}P{0.1371\linewidth}P{0.1371\linewidth}P{0.1371\linewidth}P{0.1371\linewidth}P{0.1371\linewidth}P{0.1371\linewidth}}
+\toprule
+test\_id & compared\_fields\_or\_families & relationship\_tested & observed\_result & classification & why\_reconciliation\_was\_not\_defensible & analytical\_consequence \\
+\midrule\endhead
+R001 & headline metrics & weekly case equals cumulative case & Comparison recorded as PASS only as a non-identity comparison & DASHBOARD\_RAW\_RECONCILIATION\_LIMITATION & The fields are different source quantities and were not treated as an arithmetic identity & Audit only \\
+R002 & age by sex & male plus female equals displayed total & UNRESOLVED & MISSING\_OR\_UNCLASSIFIED\_CATEGORY;SEMANTIC\_MISMATCH & Raw age tables and table-to-family universes were not frozen & Raw-label inventory only \\
+R003 & age by sex & age-category sum equals demographic total & UNRESOLVED & MISSING\_OR\_UNCLASSIFIED\_CATEGORY;SEMANTIC\_MISMATCH & Blank malformed and overlapping raw labels prevent a defensible unnormalized sum & No pooled demographic total \\
+R004 & within/outside City Corporation & within plus outside equals geographic total & NOT\_COMPARABLE & Geographic attribution and compatible totals are not established & Source geography only &  \\
+R005 & division & division subtotal equals national total & NOT\_COMPARABLE & Dashboard universes and chart denominators are not established & No geographic aggregation inference &  \\
+R006 & daily series & daily accumulation equals cumulative headline & UNRESOLVED & DIFFERENT\_TIME\_WINDOW;UNKNOWN & Embedded series values were not assembled as a typed longitudinal table & Snapshot-level description only \\
+R007 & EPI-week series & EPI-week accumulation equals compatible total & UNRESOLVED & DIFFERENT\_TIME\_WINDOW;UNKNOWN & Compatible total and exact series semantics are not frozen & Audit only \\
+R008 & monthly series & monthly accumulation equals annual/YTD total & UNRESOLVED & DIFFERENT\_TIME\_WINDOW;UNKNOWN & Time-window and component definitions are not frozen & Audit only \\
+R009 & headline metrics & weekly death plus other components equals cumulative death & NOT\_COMPARABLE & Weekly and cumulative windows are different reporting quantities & No cross-window summation &  \\
+\bottomrule
+\end{longtable}
+\endgroup

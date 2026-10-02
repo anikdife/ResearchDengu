@@ -1,0 +1,46 @@
+{
+  "dataset_version": "ResearchDengu-B010-v1",
+  "freeze_timestamp": "2026-09-30T08:22:08Z",
+  "freeze_verdict": "B010_DATASET_FREEZE_WITH_LIMITATIONS",
+  "processed_files": [
+    {
+      "path": "data/processed/dghs_research_observations.csv",
+      "size_bytes": 60271,
+      "row_count": 297,
+      "column_count": 9,
+      "sha256": "4deaec6301ec31da2e312da6f351544ddbaf008e1b1a1db31674db4b6bf8ccd0",
+      "schema": ["snapshot_id", "requested_date", "displayed_date", "source_html", "SHA256", "extractor_version", "data_family", "availability", "raw_label"]
+    },
+    {
+      "path": "data/processed/dghs_headline_metrics.csv",
+      "size_bytes": 24307,
+      "row_count": 135,
+      "column_count": 8,
+      "sha256": "bad94aa1180c4ab139cf6ddf796f32a57790fe27f0225c1edf70c7066c146085",
+      "schema": ["snapshot_id", "requested_date", "displayed_date", "source_html", "SHA256", "extractor_version", "metric_raw_label", "value_raw"]
+    }
+  ],
+  "source_manifest": {
+    "path": "metadata/frozen-historical-acquisition-manifest.csv",
+    "sha256": "6718c4db07843e638aa1ee3bce000cdf5e057b18032df35d0ee407e81d49ff91",
+    "row_count": 27,
+    "source_snapshot_count": 27
+  },
+  "provenance_coverage": {
+    "processed_rows_total": 432,
+    "processed_rows_resolved": 432,
+    "processed_rows_unresolved": 0,
+    "coverage_percent": 100.0,
+    "source_hash_status": "HASH_MATCH"
+  },
+  "allowed_analytical_families": ["headline_metrics", "daily_series", "epi_week_series", "monthly_series", "annual_series"],
+  "audit_only_families": ["division_snapshot", "division_epi_week", "city_corporation", "within_outside_city_corporation", "age_sex", "death_age_sex"],
+  "known_limitations": [
+    "Processed tables are provenance-linked family-availability and headline tables, not fully normalized longitudinal or demographic value tables.",
+    "Raw age labels contain blanks, overlaps, alternate spellings, and numeric-looking anomalies that were not corrected.",
+    "Geographic attribution and case/admission/reporting semantics remain unresolved.",
+    "Repeated embedded history requires a separate deterministic canonicalization contract before longitudinal modeling.",
+    "No population denominators or causal comparability claims are included."
+  ],
+  "immutability_rule": "Future corrections require a new dataset version, documented reason, new hashes, and a new freeze manifest."
+}

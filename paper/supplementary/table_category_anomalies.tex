@@ -1,0 +1,19 @@
+\begingroup\footnotesize\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{P{0.1371\linewidth}P{0.1371\linewidth}P{0.1371\linewidth}P{0.1371\linewidth}P{0.1371\linewidth}P{0.1371\linewidth}P{0.1371\linewidth}}
+\toprule
+data\_family & snapshot\_or\_date & raw\_label & anomaly\_type & semantic\_issue & analytical\_consequence & treatment\_in\_study \\
+\midrule\endhead
+age\_by\_sex & 2024-01-01--2026-09-29 &  & BLANK\_AGE\_LABEL & Blank age category has no defensible assignment & EXCLUDED\_FROM\_NORMALIZED\_ANALYSIS & Retained as raw label; no imputation \\
+age\_by\_sex & 2024-01-01--2026-09-29 & 0-10 & OVERLAPPING\_AGE\_BAND & Overlaps with 0-5 and 6-10 & EXCLUDED\_FROM\_NORMALIZED\_ANALYSIS & Not merged with other bands \\
+age\_by\_sex & 2024-01-01--2026-09-29 & 06-10 & LEADING\_ZERO\_AGE\_LABEL & Format variant was not shown to be equivalent to 6-10 & EXCLUDED\_FROM\_NORMALIZED\_ANALYSIS & Preserved exactly \\
+age\_by\_sex & 2024-01-01--2026-09-29 & 6-10 & ALTERNATE\_AGE\_SPELLING & Format variant was not merged with 06-10 & EXCLUDED\_FROM\_NORMALIZED\_ANALYSIS & Preserved exactly \\
+age\_by\_sex & 2024-01-01--2026-09-29 & 21-30 & OVERLAPPING\_AGE\_BAND & Overlaps with 21-25 and 26-30 & EXCLUDED\_FROM\_NORMALIZED\_ANALYSIS & Not merged with component bands \\
+age\_by\_sex & 2024-01-01--2026-09-29 & 42309 & NUMERIC\_LOOKING\_AGE\_LABEL & Numeric-looking raw label has no established age meaning & EXCLUDED\_FROM\_NORMALIZED\_ANALYSIS & Not interpreted as an age \\
+age\_by\_sex & 2024-01-01--2026-09-29 & 46301 & NUMERIC\_LOOKING\_AGE\_LABEL & Numeric-looking raw label has no established age meaning & EXCLUDED\_FROM\_NORMALIZED\_ANALYSIS & Not interpreted as an age \\
+division\_data & 2024-01-01--2026-09-29 & Raishahi & UNEXPECTED\_DIVISION\_SPELLING & Observed spelling variant was not silently corrected & SAFE\_AS\_SOURCE\_LABEL & Preserved separately from Rajshahi \\
+within\_outside\_city\_corporation & 2024-01-01--2026-09-29 & Dhaka Division (Out of CC) & GEOGRAPHIC\_LABEL\_VARIANT & Residence/facility/administrative meaning unresolved & GEOGRAPHIC\_MEANING\_UNRESOLVED & Raw label retained; not ruralized \\
+within\_outside\_city\_corporation & 2024-01-01--2026-09-29 & DNCC & CITY\_CORPORATION\_LABEL & Label is a source City Corporation abbreviation & SAFE\_AS\_SOURCE\_LABEL & Raw abbreviation retained; no all-urban inference \\
+within\_outside\_city\_corporation & 2024-01-01--2026-09-29 & DSCC & CITY\_CORPORATION\_LABEL & Label is a source City Corporation abbreviation & SAFE\_AS\_SOURCE\_LABEL & Raw abbreviation retained; no all-urban inference \\
+\bottomrule
+\end{longtable}
+\endgroup

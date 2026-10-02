@@ -1,0 +1,17 @@
+\noindent\textbf{Background:}
+
+Public dengue dashboards can support timely secondary research, but a visible value is not necessarily a documented, semantically stable, or reproducible research observation. We evaluated the public Bangladesh Directorate General of Health Services (DGHS) Dengue Dynamic Dashboard as a research-data interface.
+
+The objective was to assess historical-state reproducibility, provenance, semantic interpretability, and internal reconciliation while preserving the boundary between dashboard observations and the underlying surveillance system.
+
+\medskip\noindent\textbf{Methods:}
+
+We reconstructed validated historical dashboard states from 2024--2026 using a provenance-preserving workflow. Exact responses were archived with SHA-256 integrity hashes, then assessed using source labels, semantic contracts, reconciliation checks, and a bounded revision/stability audit. Analysis remained descriptive and restricted to dashboard-reported observations.
+
+\medskip\noindent\textbf{Results:}
+
+The 27 validated historical states spanning 2024--2026 were successfully reconstructed with traceable response, date, and integrity records. The returned content exposed concrete category anomalies, including overlapping age bands, malformed or numeric-looking labels, spelling variants, and geographically ambiguous source labels. Reconciliation was restricted where reporting windows, semantic universes, or typed longitudinal values were incompatible or unavailable. Retrospective revision/stability remained unresolved because repeated typed chart-point values were unavailable. The 2026 states were incomplete and were not treated as a completed annual period (Supplementary Table S1).
+
+\medskip\noindent\textbf{Conclusions:}
+
+The dashboard supported traceable reconstruction of selected historical states and bounded use of source-labelled observations, but retrieval did not resolve case semantics, reporting-facility coverage, geographic attribution, denominator compatibility, or revision behavior. Secondary users should archive raw responses, preserve labels, validate semantic compatibility, and distinguish dashboard observations from the underlying surveillance system.

@@ -1,0 +1,7 @@
+file,sha256,source_url,access_date,status
+NO_RAW_DGHS_ARTIFACT,,,,NOT_OBTAINED
+DGHS_DASHBOARD_RAW,NOT_OBTAINED,https://dashboard.dghs.gov.bd/pages/heoc_dengue_v1.php,2026-09-30,NO_OPEN_STRUCTURED_SOURCE_RECOVERED
+DGHS_PRESS_RELEASE_RAW,NOT_OBTAINED,https://old.dghs.gov.bd/index.php/bd/home/5200-daily-dengue-status-report,2026-09-30,NO_LOCAL_ARCHIVE_RECOVERED
+DGHS_SURVEILLANCE_MAPPING_2026,NOT_ARCHIVED,https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-dghs/2026/1/3aff1c70-41ba-41c6-a913-a6875b2ecde5.pdf,2026-09-30,REMOTE_METADATA_ONLY
+PAPER_SUPPLEMENT_2026,NOT_ARCHIVED,https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12889-026-28806-y/MediaObjects/12889_2026_28806_MOESM1_ESM.docx,2026-09-30,BINARY_RETRIEVAL_UNAVAILABLE
+WHO_DENGUE_SITREP_2023_08,NOT_ARCHIVED,https://cdn.who.int/media/docs/default-source/searo/bangladesh/dengue-sitrep/dengue-sitrep-issue-8.pdf,2026-09-30,SECONDARY_REMOTE_SOURCE_NOT_RAW_DATA
