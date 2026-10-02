@@ -4,7 +4,7 @@ This is a journal-neutral, single-column LaTeX presentation of `manuscript/Resea
 
 The main entry point is `manuscript.tex`; the separate supplementary entry point is `supplementary.tex`. Validated figures are supplied as both SVG and PDF under `figures/`.
 
-Human-author confirmation has resolved funding, conflicts, author contributions, authorship responsibility wording, AI disclosure, and conservative data/code release status. The only remaining controlled submission marker is `ETHICS_DETERMINATION_PENDING`.
+Human-author confirmation has resolved funding, conflicts, author contributions, authorship responsibility wording, AI disclosure, and conservative data/code release status. Formal institutional review or exemption status has not yet been determined.
 
 The professor-facing manuscript has no line numbering. Tables 1--3 remain in the main manuscript; the full restricted descriptive-observation table is Supplementary Table S8. Supplementary tables are compiled separately.
 
