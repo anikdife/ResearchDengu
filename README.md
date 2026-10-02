@@ -12,10 +12,14 @@ incidence, infection burden, transmission risk, or causal effects.
 **Reproducibility and Data Quality of Bangladesh's Public DGHS Dengue Dashboard:
 An Empirical Evaluation**
 
-Authors:
+## Authors
 
-- Tajrian Sarwar
-- Md Aminul Islam
+- **Tajrian Sarwar, MBBS** — First author; conceptualization, methodology,
+  investigation, data curation, formal analysis, validation, manuscript drafting,
+  review/editing, and project administration.
+
+- **Md Aminul Islam** — Software, data curation, validation, and manuscript
+  review/editing.
 
 Status: Manuscript prepared for submission.
 
